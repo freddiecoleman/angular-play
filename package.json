@@ -1,0 +1,15 @@
+{
+  "name": "angular-play",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "devDependencies": {
+    "http-server": "^0.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -a 0.0.0.0 -p 8000"
+  },
+  "author": "",
+  "license": "ISC"
+}

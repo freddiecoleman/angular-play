@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="freddieApp">
+<head>
+  <meta charset="UTF-8">
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+
+  <script src="js/controllers.js"></script>
+  <title>Freddie playing with AngularJS</title>
+</head>
+<body ng-controller="ChatCtrl as chat">
+  <div class="row">
+    <div class="col-md-6">
+      <input type="text" name="chat" ng-model="currentMessage">
+    </div>
+    <div class="col-md-6">{{ currentMessage }}
+
+      <ul>
+        <li ng-repeat="message in messages">
+          {{ message.username }}
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</body>
+</html>
