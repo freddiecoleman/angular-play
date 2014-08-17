@@ -15,9 +15,21 @@
 <body ng-controller="ChatCtrl as chat">
   <div class="row">
     <div class="col-md-6">
-      <input type="text" name="chat" ng-model="currentMessage">
+
+      <form role="form" ng-submit="submit()">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="username">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <input type="text" class="form-control" id="message">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+
     </div>
-    <div class="col-md-6">{{ currentMessage }}
+    <div class="col-md-6">
 
       <ul>
         <li ng-repeat="message in messages">
